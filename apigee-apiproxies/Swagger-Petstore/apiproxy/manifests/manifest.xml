@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AME-SetAPIKey" version="SHA-512:efef36945e0eedab16525855f5b1b8384abc99cc3bfd7ab451aec2fdf90a9a141ff262454f1071eb483be145bf96800b772333a895d9c97ef6e385c1703e5a4f"/>
+        <VersionInfo resourceName="FC-Security" version="SHA-512:c0afe1e6f54262184131ec959506a56419c369bb1db57aa8c1ef73c6e260acee11666fd69f70ab938b6e5f517f0ed441552f713a0b8a49506ca0b198bb21dfb2"/>
+        <VersionInfo resourceName="KO-PetstoreKey" version="SHA-512:e4473893919ab50d66535652dad2e2517c37a44cc80ed44edef7ded42cbef5a109172a05b903606f3890bddd5f00ca0a5df94a90f3910906db2e12530b277a5d"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:ecbed13895d4750704cd2ad4039a1394952444506711203c78bc67f62114ba5acc2562f7ee77c1f9a39e3eae668e6fc81d6d83512354bf26e1632fee8186cb29"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="openapi://association.json" version="SHA-512:925ece03f96fa7da33c180557d34ffb17e1f2b4eae3029aef11b7bfd078126062cdd17648a7dc63d3d66c182814efc7dc65111fba0a5d6827ea15d086619b954"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:418d148b19a4de941e46b5418a3e76b91342d5da8ede8ad4bbece9aa02a95f4b28e5b2f6e535aa324fa701459d048bc95f35389ab1bff50d1a31661eb737d9ea"/>
+    </TargetEndpoints>
+</Manifest>

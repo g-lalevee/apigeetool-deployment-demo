@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota name="Quota-1">
+    <Interval ref="verifyapikey.verify-api-key.apiproduct.developer.quota.interval">1</Interval>
+    <TimeUnit ref="verifyapikey.verify-api-key.apiproduct.developer.quota.timeunit">hour</TimeUnit>
+    <Allow count="200" countRef="verifyapikey.verify-api-key.apiproduct.developer.quota.limit"/>
+    <DisplayName>Quota-1</DisplayName>
+</Quota>

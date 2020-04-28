@@ -1,34 +1,18 @@
 {
     "KVM": [
         {
-            "mapName": "xxx",
+            "mapName": "MyTestKeys",
             "encrypted": true,
-            "environment": "eee"
+            "environment": "test"
         }
     ],
 
     "KVMentry": [
         {
-            "mapName": "xxx",
-            "entryName": "entryx", 
-            "entryValue":"valuex",
-            "environment": "eee"
+            "mapName": "MyTestKeys",
+            "entryName": "key1", 
+            "entryValue":"key-value",
+            "environment": "test"
         }
-    ],
-
-    "Cache": [
-        {
-            "cacheName": "ccc",
-            "environment": "eee"
-        }
-    ],
-
-    "TargetServer": [
-        {
-            "environment": "eee",
-            "targetServerName": "ttt",
-            "targetHost": "hhh",
-            "targetPort": 443          
-        }  
     ]
 }

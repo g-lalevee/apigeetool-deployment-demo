@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="security-sharedflow">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1582903795409</CreatedAt>
+    <CreatedBy>lalevee@google.com</CreatedBy>
+    <Description>root git: 16b787f5 runner-72989761-project-14243965-concurrent-0</Description>
+    <DisplayName>Shared-Flow</DisplayName>
+    <LastModifiedAt>1582903795409</LastModifiedAt>
+    <LastModifiedBy>lalevee@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:81deb03df7325b3ff533f9c34b02cb20ffc2fd644aeb25b30aab2594778e1807c1d5870ce9feb5278d7b9985c902060b1c7eed1cb5c6c6888724ec86d641faa8</ManifestVersion>
+    <Policies>
+        <Policy>Quota-1</Policy>
+        <Policy>RemoveParamKey</Policy>
+        <Policy>Verify-API-Key-1</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>
