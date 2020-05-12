@@ -18,7 +18,7 @@ jobs:
 
     - name: Test deployment using Newman
       id: dotenv
-      uses: falti/dotenv-action
+      uses: falti/dotenv-action@v0.2.4
     
     - name: Deployment
       id: deployment
