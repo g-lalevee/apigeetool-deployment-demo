@@ -3,5 +3,5 @@
     <DisplayName>FC-Security</DisplayName>
     <FaultRules/>
     <Properties/>
-    <SharedFlowBundle>security-sharedflow</SharedFlowBundle>
+    <SharedFlowBundle>security-ddos</SharedFlowBundle>
 </FlowCallout>

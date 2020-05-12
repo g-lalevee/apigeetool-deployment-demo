@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="security-ddos">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1589319561736</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>undefined</Description>
+    <DisplayName>security-ddos</DisplayName>
+    <LastModifiedAt>1589319617535</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:305d57f9ffc063185c22b6a6b4f60c033178f24f02936c88f4fda781a9d780343d272d90e04ce6e1d3c4db170be0e42acd7c5d3e51d8869cd88e95145946ad36</ManifestVersion>
+    <Policies>
+        <Policy>Spike-Arrest</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>
