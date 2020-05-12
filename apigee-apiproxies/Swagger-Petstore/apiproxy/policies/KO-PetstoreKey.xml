@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<KeyValueMapOperations async="false" continueOnError="false" enabled="true" mapIdentifier="Keys" name="KO-PetstoreKey">
+<KeyValueMapOperations encrypted="false" mapIdentifier="Keys" async="false" continueOnError="false" enabled="true" name="KO-PetstoreKey">
     <DisplayName>KO-PetstoreKey</DisplayName>
+    <FaultRules/>
     <Properties/>
+    <ExclusiveCache>false</ExclusiveCache>
+    <ExpiryTimeInSecs>-1</ExpiryTimeInSecs>
+    <InitialEntries/>
     <Get assignTo="Petstore-Key">
         <Key>
             <Parameter>Petstore-Key</Parameter>

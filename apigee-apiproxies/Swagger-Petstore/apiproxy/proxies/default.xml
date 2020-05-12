@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProxyEndpoint name="default">
-    <PreFlow name="PreFlow">
-        <Request>
-            <Step>
-                <Name>FC-Security</Name>
-            </Step>
-        </Request>
-        <Response/>
-    </PreFlow>
+    <Description/>
+    <FaultRules/>
     <Flows>
         <Flow name="findPetsByStatus">
             <Description>Finds Pets by status</Description>
@@ -15,19 +9,29 @@
             <Response/>
             <Condition>(proxy.pathsuffix MatchesPath "/pet/findByStatus") and (request.verb = "GET")</Condition>
         </Flow>
-        <Flow name="findPetsByTags">
-            <Description>Finds Pets by tags</Description>
+        <Flow name="findPetsByIDs">
+            <Description>Finds Pets by Id</Description>
             <Request/>
             <Response/>
-            <Condition>(proxy.pathsuffix MatchesPath "/pet/findByTags") and (request.verb = "GET")</Condition>
+            <Condition>(proxy.pathsuffix MatchesPath "/pet") and (request.verb = "GET")</Condition>
         </Flow>
     </Flows>
     <PostFlow name="PostFlow">
         <Request/>
         <Response/>
     </PostFlow>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <FaultRules/>
+                <Name>FC-Security</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
     <HTTPProxyConnection>
         <BasePath>/swagger-petstore</BasePath>
+        <Properties/>
         <VirtualHost>secure</VirtualHost>
     </HTTPProxyConnection>
     <RouteRule name="default">

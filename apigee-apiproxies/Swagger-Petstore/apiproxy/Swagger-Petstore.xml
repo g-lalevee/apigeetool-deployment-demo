@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <APIProxy revision="1" name="Swagger-Petstore">
     <Basepaths>/swagger-petstore</Basepaths>
+    <Basepaths>/swagger-petstore</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1587076552231</CreatedAt>
-    <CreatedBy>defaultUser</CreatedBy>
+    <CreatedAt>1589320298264</CreatedAt>
+    <CreatedBy>lalevee@google.com</CreatedBy>
     <Description>This is a sample server Petstore server</Description>
     <DisplayName>Swagger-Petstore</DisplayName>
-    <LastModifiedAt>1587076552231</LastModifiedAt>
+    <LastModifiedAt>1589322855505</LastModifiedAt>
     <LastModifiedBy>defaultUser</LastModifiedBy>
-    <ManifestVersion>SHA-512:97cad85c61ca9d13f08396c7622143a0535833073b056e84032f90d6d1d9eb3265e3fa6b7a3dda7ef73d19d47ad904cb0cb3d0f6037e23b7c8efc04a7d5fb888</ManifestVersion>
+    <ManifestVersion>SHA-512:46ff5013e1b86bbe6e24a1f2ef182fdc7c6cd09ee6a83cbd2f98fca6b5b198c9df853fbee0ba4c6573f73c858b2213cfd20de1afdf71ecc90c704d94c6aebf9b</ManifestVersion>
     <Policies>
         <Policy>AME-SetAPIKey</Policy>
         <Policy>FC-Security</Policy>

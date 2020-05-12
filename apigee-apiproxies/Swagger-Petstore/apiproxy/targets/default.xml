@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TargetEndpoint name="default">
-    <PreFlow name="PreFlow">
-        <Request>
-            <Step>
-                <Name>KO-PetstoreKey</Name>
-            </Step>
-            <Step>
-                <Name>AME-SetAPIKey</Name>
-            </Step>
-        </Request>
-        <Response/>
-    </PreFlow>
+    <Description></Description>
+    <FaultRules/>
     <Flows/>
     <PostFlow name="PostFlow">
         <Request/>
         <Response/>
     </PostFlow>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <FaultRules/>
+                <Name>KO-PetstoreKey</Name>
+            </Step>
+            <Step>
+                <FaultRules/>
+                <Name>AME-SetAPIKey</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
     <HTTPTargetConnection>
+        <Properties/>
         <URL>https://petstore.swagger.io/v2</URL>
     </HTTPTargetConnection>
 </TargetEndpoint>
