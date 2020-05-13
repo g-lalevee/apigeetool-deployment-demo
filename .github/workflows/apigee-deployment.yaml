@@ -22,8 +22,9 @@ jobs:
 
     - name: Display variables
       run: |
-        echo $APIGEE_ORGANIZATION
-        echo $APIGEE_ENV
+        echo "org: " $APIGEE_ORGANIZATION
+        echo "env: " $APIGEE_ENV
+        set
         pwd
     
    # - name: Deployment
