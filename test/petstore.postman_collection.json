@@ -17,10 +17,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://{{organization}}-{{environment}}.apigee.net/swagger-petstore/pet/findByStatus?status=available",
+					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net/swagger-petstore/pet/findByStatus?status=available",
 					"protocol": "https",
 					"host": [
-						"{{organization}}-{{environment}}.apigee.net"
+						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net"
 					],
 					"path": [
 						"swagger-petstore",
@@ -49,10 +49,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://{{organization}}-{{environment}}.apigee.net/swagger-petstore/pet/100",
+					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net/swagger-petstore/pet/100",
 					"protocol": "https",
 					"host": [
-						"{{organization}}-{{environment}}.apigee.net"
+						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net"
 					],
 					"path": [
 						"swagger-petstore",
@@ -89,13 +89,13 @@
 	"variable": [
 		{
 			"id": "c255cf94-c87b-4aad-b6b8-1e66ed87c181",
-			"key": "environment",
+			"key": "APIGEE_ENV",
 			"value": "test",
 			"type": "string"
 		},
 		{
 			"id": "26e27be7-f23e-4572-a088-714e486bf96a",
-			"key": "organization",
+			"key": "APIGEE_ORGANIZATION",
 			"value": "emea-demo7",
 			"type": "string"
 		},

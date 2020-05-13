@@ -19,6 +19,12 @@ jobs:
     - name: Retrieve variables from .env
       id: dotenv
       uses: falti/dotenv-action@v0.2.4
+
+    - name: Display variables
+      run: |
+        echo $APIGEE_ORGANIZATION
+        echo $APIGEE_ENV
+        pwd
     
    # - name: Deployment
     #  id: deployment
@@ -36,6 +42,8 @@ jobs:
       id: Test
       uses: matt-ball/newman-action@master
       with:
-        collection: postman_collection.json
-        environment: postman_environment.json
+        collection: petstore.postman_collection.json
+        environment: .env
+        iterationCount: 2
+
 
