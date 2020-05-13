@@ -14,18 +14,18 @@ jobs:
     name: Deploy Apigee Proxy
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@master
 
-    - name: Retrieve variables from .env
-      id: dotenv
-      uses: falti/dotenv-action@v0.2.4
+    #- name: Retrieve variables from .env
+    #  id: dotenv
+    #  uses: falti/dotenv-action@v0.2.4
 
-    - name: Display variables
-      run: |
-        echo "org: " $APIGEE_ORGANIZATION
-        echo "env: " $APIGEE_ENV
-        set
-        pwd
+    #- name: Display variables
+    #  run: |
+    #    echo "org: " $APIGEE_ORGANIZATION
+    #    echo "env: " $APIGEE_ENV
+    #    set
+    #    pwd
     
    # - name: Deployment
     #  id: deployment
@@ -39,9 +39,7 @@ jobs:
     #- name: Get the Apigeetool Return Code
     #  run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
 
-    - name: Deployment test using Newman
-      id: Test
-      uses: matt-ball/newman-action@master
+    - uses: matt-ball/newman-action@master
       with:
         collection: petstore.postman_collection.json
         environment: .env
