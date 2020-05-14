@@ -30,7 +30,7 @@ jobs:
 
     - uses: g-lalevee/newman-test-action@master
       with:
-        collection: petstore.postman_collection.jsodn
+        collection: petstore.postman_collection.json
         environment: .env
         iterationCount: 2
 
