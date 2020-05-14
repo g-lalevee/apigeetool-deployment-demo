@@ -16,20 +16,19 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@master
     
-   # - name: Deployment
-    #  id: deployment
-   #   uses: g-lalevee/apigeetool-deployment-action@v1.0
-   #  with:
-    #    APIGEE_USERNAME: ${{ secrets.APIGEE_ID }}
-    #    APIGEE_PASSWORD: ${{ secrets.APIGEE_PWD }}  
-    #    APIGEETOOL_ERROR_STOP: false
+    - name: Deployment
+      id: deployment
+      uses: g-lalevee/apigeetool-deployment-action@v1.0
+      with:
+        APIGEE_USERNAME: ${{ secrets.APIGEE_ID }}
+        APIGEE_PASSWORD: ${{ secrets.APIGEE_PWD }}  
+        APIGEETOOL_ERROR_STOP: false
           
     # Use the output from the `Deployment` step
-    #- name: Get the Apigeetool Return Code
-    #  run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
+    - name: Get the Apigeetool Return Code
+      run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
 
     - uses: g-lalevee/newman-test-action@master
-    #- uses: matt-ball/newman-action@master
       with:
         collection: test/petstore.postman_collection.json
         environment: test/postman_environment.json
