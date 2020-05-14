@@ -28,7 +28,8 @@ jobs:
     #- name: Get the Apigeetool Return Code
     #  run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
 
-    - uses: g-lalevee/newman-test-action@master
+    #- uses: g-lalevee/newman-test-action@master
+    - uses: matt-ball/newman-action@master
       with:
         collection: test/petstore.postman_collection.json
         environment: .env
