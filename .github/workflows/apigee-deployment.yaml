@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy Apigee Proxy
     steps:
+
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@master
     
@@ -28,7 +29,9 @@ jobs:
     - name: Get the Apigeetool Return Code
       run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
 
-    - uses: g-lalevee/newman-test-action@master
+    - name: Unit Test
+      id: test
+      uses: g-lalevee/newman-test-action@master
       with:
         collection: test/petstore.postman_collection.json
         environment: test/postman_environment.json
