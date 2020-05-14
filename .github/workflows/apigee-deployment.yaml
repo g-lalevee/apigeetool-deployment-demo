@@ -33,3 +33,5 @@ jobs:
         collection: petstore.postman_collection.json
         environment: .env
         iterationCount: 2
+
+        
