@@ -20,7 +20,9 @@
 					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net/swagger-petstore/pet/findByStatus?status=available",
 					"protocol": "https",
 					"host": [
-						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net"
+						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}",
+						"apigee",
+						"net"
 					],
 					"path": [
 						"swagger-petstore",
@@ -49,10 +51,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net/swagger-petstore/pet/100",
+					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}/swagger-petstore/pet/100",
 					"protocol": "https",
 					"host": [
-						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net"
+						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}"
 					],
 					"path": [
 						"swagger-petstore",
@@ -84,26 +86,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"id": "c255cf94-c87b-4aad-b6b8-1e66ed87c181",
-			"key": "APIGEE_ENV",
-			"value": "test",
-			"type": "string"
-		},
-		{
-			"id": "26e27be7-f23e-4572-a088-714e486bf96a",
-			"key": "APIGEE_ORGANIZATION",
-			"value": "emea-demo7",
-			"type": "string"
-		},
-		{
-			"id": "8e61d94a-b76e-4ad4-8d3d-14497ae7ad86",
-			"key": "hostname",
-			"value": "emea-demo7-test.apigee.net",
-			"type": "string"
 		}
 	],
 	"protocolProfileBehavior": {}
