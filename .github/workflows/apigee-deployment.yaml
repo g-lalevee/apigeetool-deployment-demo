@@ -34,5 +34,5 @@ jobs:
         collection: test/petstore.postman_collection.json
         environment: test/postman_environment.json
         iterationCount: 2
+        workingDir: test
 
-        
