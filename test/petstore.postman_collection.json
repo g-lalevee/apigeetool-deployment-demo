@@ -51,15 +51,17 @@
 					}
 				],
 				"url": {
-					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net/swagger-petstore/pet/100",
+					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net/swagger-petstore/pet/1000",
 					"protocol": "https",
 					"host": [
-						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}"
+						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}",
+						"apigee",
+						"net"
 					],
 					"path": [
 						"swagger-petstore",
 						"pet",
-						"100"
+						"1000"
 					]
 				}
 			},
