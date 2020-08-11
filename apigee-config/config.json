@@ -14,5 +14,43 @@
             "entryValue":"key-value",
             "environment": "test"
         }
+    ],
+    "Product": [
+        {
+            "productName": "Swagger-Petstore",
+            "productDesc": "Petstore Product",
+            "environments": "test",
+            "scopes": "",
+            "proxies": "Swagger-Petstore",
+            "quota": "100", 
+            "quotaInterval": "1", 
+            "quotaTimeUnit": "minute"
+        }
+    ],
+    "Developer": [
+        {
+            "attributes": [{"name":"Experience", "value":"Senior"}],
+            "userName": "ghabitbol",
+            "email": "developer@example.com",
+            "firstName": "Georges",
+            "lastName":  "Habitbol"
+        }
+    ],
+    "Application": [
+        {
+            "apiProducts": "Swagger-Petstore",
+            "callback": "",
+            "email": "developer@example.com",
+            "name": "Swagger-Petstore-App"
+        }
+    ],
+    "ApplicationKey": [
+        {
+            "apiProducts": "Swagger-Petstore",
+            "appName": "Swagger-Petstore-App",
+            "developerId": "developer@example.com",
+            "key": "aaaaaaa",
+            "secret": "aaaaaaaaaaaa"
+        }
     ]
 }
