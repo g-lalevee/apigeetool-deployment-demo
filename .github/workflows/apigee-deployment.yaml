@@ -30,6 +30,8 @@ jobs:
       run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
 
 
+    - name: Update Newman environment file
+      run: ./test/update-target.sh
 
     - name: Unit Test
       id: test
