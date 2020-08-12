@@ -49,7 +49,7 @@ jobs:
         workingDir: test
 
     - name: Publish Result
-      uses: g-lalevee/google-chat-action@v0.2
+      uses: g-lalevee/google-chat-action@v0.3
       with:
         googleChatRoom: ${{ secrets.GOOGLECHATROOM }}
         googleChatKey: ${{ secrets.GOOGLECHATKEY }}
