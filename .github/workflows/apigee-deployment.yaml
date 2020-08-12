@@ -49,7 +49,7 @@ jobs:
         workingDir: test
 
     - name: Get the Newman result
-      run: echo "Newman result ${{ steps.test.outputs.resultFile }}"
+      run: echo "Newman result" ${{ steps.test.outputs.resultFile }}
 
     - name: Publish Result
       uses: g-lalevee/google-chat-action@v0.4
