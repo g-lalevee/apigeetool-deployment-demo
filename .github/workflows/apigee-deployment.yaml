@@ -41,7 +41,7 @@ jobs:
 
     - name: Unit Test
       id: test
-      uses: g-lalevee/newman-test-action@master
+      uses: g-lalevee/newman-test-action@v0.3
       with:
         collection: test/petstore.postman_collection.json
         environment: test/postman_environment.json
