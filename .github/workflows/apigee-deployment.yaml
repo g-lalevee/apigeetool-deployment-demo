@@ -49,7 +49,7 @@ jobs:
         workingDir: test
 
     - name: Publish Result
-      uses: actions/Google-Chat-Action@v0.1
+      uses: actions/google-chat-action@v0.1
       with:
         googleChatRoom: ${{ secrets.GOOGLECHATROOM }}
         googleChatKey: ${{ secrets.GOOGLECHATKEY }}
