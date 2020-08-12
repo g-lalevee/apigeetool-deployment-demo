@@ -1,84 +1,84 @@
-# config.json format
+# Apigee configuration folder
+
+Copy here your configuration file.
+Format is:
 
 ```
 {
     "KVM": [
         {
-            "mapName": "KVM1",
+            "mapName": "name",
             "encrypted": true,
-            "environment": "Test",
-            "api": ""
+            "environment": "env"
         }
     ],
 
     "KVMentry": [
         {
-            "mapName": "KVM2",
-            "entryName": "testy", 
-            "entryValue":"yyy",
-            "environment": "Prod",
-            "api": "api2"
+            "mapName": "name",
+            "entryName": "entry", 
+            "entryValue":"value",
+            "environment": "env"
         }
     ],
 
     "Cache": [
         {
-            "cacheName": "cache1",
-            "environment": "test"
-        }  
-    ],  
+            "cacheName": "name",
+            "environment": "env"
+        }
+    ],
 
     "TargetServer": [
         {
-            "environment": "test",
-            "targetServerName": "httpbin",
-            "targetHost": "httpbin.org",
-            "targetPort": 443,
-            "targetSSL": true, 
-            "targetEnabled": true             
+            "environment": "env",
+            "targetServerName": "name",
+            "targetHost": "host",
+            "targetPort": 443          
         }  
     ],
 
     "Product": [
         {
-            "productName": "test",
-            "productDesc": "description",
-            "environments": "test, prod",
+            "productName": "product",
+            "productDesc": "desc",
+            "environments": "env1, env2",
             "scopes": "",
-            "proxies": "Swagger-Petstore, GetMP",
-            "quota": "1", //quota amount
-            "quotaInterva": "1", //interval
-            "quotaTimeUnit" "minute", //timeunit
+            "proxies": "proxy1,proxy2",
+            "quota": "1", 
+            "quotaInterval": "1", 
+            "quotaTimeUnit": "minute"
         }
     ],
 
     "Developer": [
         {
-            "attributes": "attr1, attr2",
-            "callback": "",
-            "email": "developer@example.com",
-            "name": "AppName"
+            "attributes": [{"name":"Attribute", "value":"Value"}],
+            "userName": "name",
+            "email": "name@example.com",
+            "firstName": "firstname",
+            "lastName":  "lastName"
         }
     ],
 
     "Application": [
         {
-            "apiProducts": "prod1, prod2",
+            "apiProducts": "product1, product2",
             "callback": "",
-            "email": "developer@example.com",
-            "name": "AppName"
+            "email": "name@example.com",
+            "name": "appName"
         }
     ],
-
+    
     "ApplicationKey": [
         {
-            "apiProducts": "prod1, prod2",
-            "appName": "monapp",
-            "developerId": "developer@example.com",
-            "key": "xkey",
-            "secret": "xsecret"
+            "apiProducts": "product1, product2",
+            "appName": "appName",
+            "developerId": "name@example.com",
+            "key": "key",
+            "secret": "secret"
         }
     ]
-
 }
+
 ```

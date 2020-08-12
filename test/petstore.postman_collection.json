@@ -17,12 +17,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net/swagger-petstore/pet/findByStatus?status=available",
-					"protocol": "https",
+					"raw": "{{PROTOCOL}}://{{HOSTNAME}}/swagger-petstore/pet/findByStatus?status=available",
+					"protocol": "{{PROTOCOL}}",
 					"host": [
-						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}",
-						"apigee",
-						"net"
+						"{{HOSTNAME}}"
 					],
 					"path": [
 						"swagger-petstore",
@@ -51,12 +49,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}.apigee.net/swagger-petstore/pet/1000",
-					"protocol": "https",
+					"raw": "{{PROTOCOL}}://{{HOSTNAME}}/swagger-petstore/pet/1000",
+					"protocol": "{{PROTOCOL}}",
 					"host": [
-						"{{APIGEE_ORGANIZATION}}-{{APIGEE_ENV}}",
-						"apigee",
-						"net"
+						"{{HOSTNAME}}"
 					],
 					"path": [
 						"swagger-petstore",
