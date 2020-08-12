@@ -54,5 +54,5 @@ jobs:
         googleChatRoom: ${{ secrets.GOOGLECHATROOM }}
         googleChatKey: ${{ secrets.GOOGLECHATKEY }}
         googleChatToken: ${{ secrets.GOOGLECHATTOKEN }}
-        message: 'text text'
+        message: 'text text et text'
 
