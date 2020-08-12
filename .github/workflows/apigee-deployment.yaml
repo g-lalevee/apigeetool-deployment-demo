@@ -29,11 +29,7 @@ jobs:
     - name: Get the Apigeetool Return Code
       run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
 
-    # Edit Newman environment file from .env file
-    # Newman environment file must contains <organization> and <environment> values 
-    # for Apigee target organization and environment keys
-    - name: Update Newman environment file with Apigee target organization and environment names
-      run: ./test/update-target.sh
+
 
     - name: Unit Test
       id: test
