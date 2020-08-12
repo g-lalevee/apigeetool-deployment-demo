@@ -7,6 +7,8 @@ name: apigee-deployment
 on:
   push:
     branches: [ master ]
+    paths-ignore:
+    - '**.md'
 
 jobs:
   apigee_deployment_job:
@@ -23,7 +25,7 @@ jobs:
       with:
         APIGEE_USERNAME: ${{ secrets.APIGEE_ID }}
         APIGEE_PASSWORD: ${{ secrets.APIGEE_PWD }}  
-        APIGEETOOL_ERROR_STOP: false
+        APIGEETOOL_ERROR_STOP: "false"
           
     # Use the output from the `Deployment` step
     - name: Get the Apigeetool Return Code
