@@ -23,7 +23,7 @@ jobs:
     
     - name: Deployment
       id: deployment
-      uses: g-lalevee/apigeetool-deployment-action@master
+      uses: g-lalevee/apigeetool-deployment-action@2.6.1
       with:
         APIGEETOOL_ERROR_STOP: "false"
         APIGEE_USERNAME: ${{ secrets.APIGEE_ID }}
