@@ -10,6 +10,7 @@ on:
     paths-ignore:
     - '**.md'
     - '**.jpg'
+    - '**.png'
 
 jobs:
   apigee_deployment_job:
