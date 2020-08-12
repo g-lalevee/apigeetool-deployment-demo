@@ -4,6 +4,11 @@
             "mapName": "MyTestKeys",
             "encrypted": true,
             "environment": "test"
+        },
+        {
+            "mapName": "MyTestKeys2",
+            "encrypted": true,
+            "environment": "test"
         }
     ],
 
