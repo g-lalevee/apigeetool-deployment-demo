@@ -21,17 +21,17 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@master
     
-    #- name: Deployment
-    #  id: deployment
-    #  uses: g-lalevee/apigeetool-deployment-action@v2.6.2
-    #  with:
-    #    APIGEETOOL_ERROR_STOP: "false"
-    #    APIGEE_USERNAME: ${{ secrets.APIGEE_ID }}
-    #    APIGEE_PASSWORD: ${{ secrets.APIGEE_PWD }}
+    - name: Deployment
+      id: deployment
+      uses: g-lalevee/apigeetool-deployment-action@v2.6.2
+      with:
+        APIGEETOOL_ERROR_STOP: "false"
+        APIGEE_USERNAME: ${{ secrets.APIGEE_ID }}
+        APIGEE_PASSWORD: ${{ secrets.APIGEE_PWD }}
           
     # Use the output from the `Deployment` step
-    #- name: Get the Apigeetool Return Code
-    #  run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
+    - name: Get the Apigeetool Return Code
+      run: echo "Apigeetool ended with code ${{ steps.deployment.outputs.RC }}"
 
     # Edit Newman environment file from .env file
     # Newman environment file must contains <hostname> value
@@ -48,14 +48,13 @@ jobs:
         iterationCount: 2
         workingDir: test
 
-    - name: Get the Newman result
-      run: echo "Newman result" ${{ steps.test.outputs.resultFile }}
+    #- name: Get the Newman result
+    #  run: echo "Newman result" ${{ steps.test.outputs.resultFile }}
 
-    - name: Publish Result
-      uses: g-lalevee/google-chat-action@v0.4
-      with:
-        googleChatRoom: ${{ secrets.GOOGLECHATROOM }}
-        googleChatKey: ${{ secrets.GOOGLECHATKEY }}
-        googleChatToken: ${{ secrets.GOOGLECHATTOKEN }}
-        message: 'text text et text'
-
+    #- name: Publish Result
+    #  uses: g-lalevee/google-chat-action@v0.4
+    #  with:
+    #    googleChatRoom: ${{ secrets.GOOGLECHATROOM }}
+    #    googleChatKey: ${{ secrets.GOOGLECHATKEY }}
+    #    googleChatToken: ${{ secrets.GOOGLECHATTOKEN }}
+    #    message: 'text text et text'
