@@ -5,7 +5,6 @@
             "encrypted": true,
             "environment": "test"
         },
-        
         {
             "mapName": "MyTestKeys2",
             "encrypted": true,
