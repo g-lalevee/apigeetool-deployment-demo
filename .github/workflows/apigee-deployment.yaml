@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: apigee-deployment
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -47,6 +45,11 @@ jobs:
         environment: test/postman_environment.json
         iterationCount: 2
         workingDir: test
+
+
+
+
+
 
     #- name: Get the Newman result
     #  run: echo "Newman result" ${{ steps.test.outputs.resultFile }}
