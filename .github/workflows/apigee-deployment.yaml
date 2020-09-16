@@ -34,6 +34,7 @@ jobs:
     # Edit Newman environment file from .env file
     # Newman environment file must contains <hostname> value
     # It will be replace by Apigee target hostname = organization-environment.apigee.net 
+
     - name: Update Newman environment file
       run: ./test/update-target.sh
 
@@ -45,6 +46,7 @@ jobs:
         environment: test/postman_environment.json
         iterationCount: 2
         workingDir: test
+        
 
 
 
